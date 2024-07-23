@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="showInvitation()" id="btn">Voir l'invitation</button>
+    <div class="modal" id="modal">
+        <span>Salut !</span>
+        
+        Mon nom c'est Cephas, 
+        <br>
+        <hr>
+        je voulais juste vous rappeler appropos de seances de rattrapages que nous avons programmer pour que nous soyons a la page:
+        <ul>
+            <li>Chaque Mardi la nuit.</li>
+            <li>Chaque vendredi la nuit.</li>
+        </ul> 
+    </div>
+
+    <script>
+        function showInvitation() {
+            const modal = document.getElementById('modal');
+            const button = document.getElementById('btn')
+            modal.style.display = (modal.style.display === 'flex' ? 'none': 'flex');
+        }
+        
+    </script>
+</body>
+</html>
